@@ -12,3 +12,7 @@ def deposit():
       print("Please enter a number")
 
       return amount
+
+# CALL THE FUNCTION - this begins the while loop to start the game
+deposit()
+
