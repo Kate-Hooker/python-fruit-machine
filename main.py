@@ -1,3 +1,4 @@
+# DEPOSIT FUNCTION - this is a while loop that will only break and return once a real amount has been put into the fruit machine so game play can commence
 def deposit():
   while True:
     amount = input("Enter amount to deposit: $")
@@ -9,3 +10,5 @@ def deposit():
         print("Please pick an amount bigger than zero")
     else:
       print("Please enter a number")
+
+      return amount
