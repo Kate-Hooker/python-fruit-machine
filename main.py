@@ -14,5 +14,13 @@ def deposit():
       return amount
 
 # CALL THE FUNCTION - this begins the while loop to start the game
-deposit()
+# deposit()
+    
+# MAIN FUNCTION: this can be called over and over again until credit runs out or the user quits
 
+def main():
+  balance = deposit()
+
+
+# CALL THE FUNCTION - this function contains the game
+  main()
