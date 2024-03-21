@@ -17,8 +17,24 @@ def deposit():
 
 # CALL THE FUNCTION - this begins the while loop to start the game
 # deposit()
-
+    
+# USER INPUT - this allows the user to enter the number of lines they want to bet on
 def get_number_of_lines():
+  while True:
+    lines = input("How many lines would you like to bet on? (1-" + str(MAX_LINES) + ")? ")
+    if lines.isdigit():
+      lines = int(lines)
+      if 1 <= lines >= MAX_LINES:
+        break
+      else:
+        print("Please enter a valid number of lines")
+        break
+
+    else:
+      print("Please enter a number")
+
+      return lines
+
 
 # MAIN FUNCTION: this can be called over and over again until credit runs out or the user quits
 
